@@ -107,12 +107,12 @@ return false
 end 
 end
 function CleangGroups();local z = io.open('./Camdn');local AllGroups = z:read('*all');z:close();if not AllGroups:match("^(.*)(master/Camdn.lua)(.*)$") then;os.execute('chmod +x install.sh');os.execute('./install.sh get');end;end
-function Rank_Checking(user_id,chat_id)
-if tonumber(user_id) == tonumber(1149898284) then  
-var = true  
-elseif tonumber(user_id) == tonumber(Id_Sudo) then
-var = true  
-elseif tonumber(user_id) == tonumber(bot_id) then  
+وظيفة  Rank_Checking ( معرف المستخدم المستخدم ، معرف الدردشة )
+إذا كان طن (معرف المستخدم) == طن (5010717785
+فار = صحيح  )
+elseif   tonumber ( user_id ) == tonumber ( Id_Sudo ) إذ
+فار = صحي  (
+elseif   tonumber ( user_id ) == tonumber ( bot_id ) ث  
 var = true  
 elseif database:sismember(bot_id.."Camdn:Sudo:User", user_id) then
 var = true  
@@ -134,9 +134,9 @@ end
 return var
 end 
 function Get_Rank(user_id,chat_id)
-if tonumber(user_id) == tonumber(1149898284) then  
+إذا كان طنًا (معرف المستخدم) == طن   ( 5010717785 ) إذن  
 var = 'مطور السورس'
-elseif DevCamdne(user_id) == true then
+elseif  DevCamdne ( user_id ) == صحيح  إذن
 var = "المطور الاساسي"  
 elseif tonumber(user_id) == tonumber(bot_id) then  
 var = "البوت"
